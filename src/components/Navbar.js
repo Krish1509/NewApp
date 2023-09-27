@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export class Navbar extends Component {
   static propTypes = {};
-  country="us"
+  country = "us";
+  Handelon = async () => {
+    let Arr = "";
+    return Arr;
+  };
   render() {
-    
     return (
       <div>
         <header className="text-gray-600 body-font">
@@ -23,40 +26,41 @@ export class Navbar extends Component {
               >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
-              <Link to="/" className="ml-3 text-xl cursor-pointer">News Monkey</Link>
+              <Link to="/" className="ml-3 text-xl cursor-pointer">
+                News Monkey
+              </Link>
             </div>
             <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
               <div className="mr-5 hover:font-semibold  cursor-pointer">
-                <Link to="/" >Home</Link>
+                <Link to="/">Home</Link>
               </div>
               <div className="mr-5 hover:font-semibold   cursor-pointer">
-                <Link to="/business" >Business</Link>
+                <Link to="/business">Business</Link>
               </div>
               <div className="mr-5 hover:font-semibold   cursor-pointer">
-                <Link to="/entertainment" >Entertainment</Link>
+                <Link to="/entertainment">Entertainment</Link>
               </div>
               <div className="mr-5 hover:font-semibold   cursor-pointer">
-                <Link to="/health" >Health</Link>
+                <Link to="/health">Health</Link>
               </div>
               <div className="mr-5 hover:font-semibold   cursor-pointer">
-                <Link to="/science" >Science</Link>
+                <Link to="/science">Science</Link>
               </div>
               <div className="mr-5 hover:font-semibold   cursor-pointer">
-                <Link to="/sports" >Sports</Link>
+                <Link to="/sports">Sports</Link>
               </div>
               <div className="mr-5 hover:font-semibold   cursor-pointer">
-                <Link to="/technology" >Technology</Link>
+                <Link to="/technology">Technology</Link>
               </div>
-              
-              <div class="dropdown">
-  <button class="dropbtn">Country  </button>
-  <div class="dropdown-content">
-    <a country={this.country}>in</a>
-    <a href="#">us</a>
-    <a href="#">japan </a>
-  </div>
 
-</div>
+              <div class="dropdown">
+                <button class="dropbtn">Country </button>
+                <div class="dropdown-content">
+                  <a country={this.country}>in</a>
+                  <a href="#">us</a>
+                  <a href="#">japan </a>
+                </div>
+              </div>
             </nav>
           </div>
         </header>

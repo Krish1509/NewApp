@@ -19,9 +19,10 @@ export class NewsItem extends Component {
                     >
                       
                       <div class=" w-[] text-gray-700 fill-current">
-                    <span class="absolute top-2 right-6 inline-flex items-center justify-center px-2 mr-6 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full ">
+                    <div class="absolute  right-0  justify-end px-2  py-1 text-xs font-bold leading-none text-red-100  bg-red-600 rounded-full ">
                       {Source}
-                    </span>
+                    </div>
+
                         <img
                           className="lg:h-48 md:h-36 w-full rounded-md object-cover object-center "
                           src={
@@ -45,12 +46,12 @@ export class NewsItem extends Component {
                     <p className="leading-relaxed -mt-1 text-[10px] text-[#969696]">
                       {new Date(publishedAt).toGMTString()}
                     </p>
-                    <div className="flex items-center flex-wrap ">
+                    <div className="flex items-center flex-wrap  ">
                       <a
                         rel="noreferrer"
                         href={newsUrl}
                         target="_blank"
-                        className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                        className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 "
                       >
                         Learn More
                         <svg
